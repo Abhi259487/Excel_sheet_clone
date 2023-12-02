@@ -1,0 +1,80 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  font-family: poppins-regular;
+}
+#root {
+  width: 100vw;
+  height: 70vh;
+  margin-top: 100px;
+  overflow: scroll;
+  position: relative;
+}
+#header {
+  width: fit-content !important;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.head-cell {
+  border: 1px solid #c4c7c5;
+  min-width: 200px;
+  height: 30px;
+  border-top-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-cell:first-child {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-width: 40.2px !important;
+  padding: 0 0.1px;
+}
+
+#body {
+  display: grid;
+  grid-template-columns: 42px auto;
+  width: fit-content;
+}
+#sno {
+  position: sticky;
+  left: 0 !important;
+  z-index: -100;
+  background-color: #fff;
+}
+.sno-cell {
+  height: 40px !important;
+  border: 1px solid #c4c7c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px !important;
+}
+.row {
+  display: flex;
+  height: 41.6px;
+}
+.cell {
+  border: 1px solid #c4c7c5 !important;
+  min-width: 200px;
+}
+#cell-container {
+  position: relative;
+  z-index: -200;
+  /* width: fit-content; */
+}
+.cell:focus {
+    outline-color:  #1B72E8;
+}
+
+#export{ 
+    cursor: pointer;
+    font-size: 32px !important;
+}
